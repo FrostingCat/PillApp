@@ -18,7 +18,7 @@
         android:id="@+id/settings_button"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/settings_button"
+        app:srcCompat="@drawable/calendar_button"
         android:layout_marginTop="30dp"
         android:layout_marginStart="350dp"/>
 
@@ -30,7 +30,15 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/calendar_button" />
+        app:srcCompat="@drawable/settings_button" />
+
+    <ImageView
+        android:id="@+id/pill_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="350dp"
+        app:srcCompat="@drawable/plus_pill" />
 
     <TextView
         android:id="@+id/text_view_date"
@@ -39,34 +47,27 @@
         android:layout_centerHorizontal="true"
         android:text="@string/date"
         android:textSize="30sp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp" />
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
+        android:id="@+id/pills_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pillsList"
+        android:textSize="30sp"
+        android:textColor="@color/button_grey_color"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/bar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
 
-            android:theme="@style/AppTheme.NoActionBar">
+    </com.google.android.material.appbar.AppBarLayout>
 
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <include
-
-            layout="@layout/content_main" />
-
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include layout="@layout/content_main" />
 
 </RelativeLayout>

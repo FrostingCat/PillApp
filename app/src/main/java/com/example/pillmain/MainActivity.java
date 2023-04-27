@@ -1,5 +1,6 @@
 package com.example.pillmain;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView imageView = findViewById(R.id.pill_plus);
+        imageView.getLayoutParams().width = 20;
 
         String currentDateTimeString = java.text.DateFormat.getDateTimeInstance().format(new Date());
 
@@ -166,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Prepares sample data to provide data set to adapter
      */
+    @SuppressLint("NotifyDataSetChanged")
     private void prepareCalendarData() {
 
         // run a for loop for all the next 30 days of the current month starting today

@@ -4,4 +4,5 @@
     <string name="title_pillbox">Pillbox</string>
     <string name="title_account">Account</string>
     <string name="date">Date</string>
+    <string name="pillsList">Список лекарств</string>
 </resources>
