@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pill main</string>
+    <string name="title_home">Home</string>
+    <string name="title_pillbox">Pillbox</string>
+    <string name="title_account">Account</string>
+    <string name="date">Date</string>
+</resources>

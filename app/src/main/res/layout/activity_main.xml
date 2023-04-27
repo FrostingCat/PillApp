@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/bottom_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/fragment_bottom_navigation"/>
+
+    <ImageView
+        android:id="@+id/settings_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/settings_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/calendar_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/calendar_button"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/date"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
