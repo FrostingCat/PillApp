@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView imageView = findViewById(R.id.pill_plus);
-        imageView.getLayoutParams().width = 20;
 
         String currentDateTimeString = java.text.DateFormat.getDateTimeInstance().format(new Date());
 
