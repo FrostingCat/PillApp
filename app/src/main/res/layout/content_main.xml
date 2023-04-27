@@ -10,7 +10,6 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,20 +18,5 @@
         android:scrollbars="vertical">
 
     </androidx.recyclerview.widget.RecyclerView>
-
-    <ImageView
-        android:id="@+id/forward"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:paddingTop="13dp"
-        app:srcCompat="@drawable/forward" />
-    <ImageView
-        android:id="@+id/reverse"
-        android:layout_width="30dp"
-        android:layout_alignEnd="@id/recycler_view"
-        android:layout_height="wrap_content"
-        android:paddingTop="13dp"
-
-        app:srcCompat="@drawable/back" />
 
 </RelativeLayout>

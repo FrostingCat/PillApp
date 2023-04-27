@@ -47,14 +47,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewDate = findViewById(R.id.text_view_date);
         textViewDate.setText(currentDateTimeString);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        forward = findViewById(R.id.forward);
-
-        reverse = findViewById(R.id.reverse);
 
         mAdapter = new CalendarAdapter(calendarList);
 
